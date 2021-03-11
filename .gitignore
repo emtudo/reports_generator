@@ -24,3 +24,5 @@ reports_generator-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+reports/a.csv
