@@ -27,7 +27,7 @@ defmodule ReportsGenerator do
   def build_from_many(filenames) do
     result =
       filenames
-      |> Task.async_stream(&build/1)
+      |> Task.async_stream(&build/1, timeout: :infinity)
       |> Enum.reduce(report_acc(), fn {:ok, result}, report -> sum_reports(report, result) end)
 
     {:ok, result}

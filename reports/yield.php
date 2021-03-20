@@ -26,8 +26,6 @@ function parse_file($filename)
     return $data;
 }
 
-
-
 function sum_values($report, $line)
 {
     // print_r($report);

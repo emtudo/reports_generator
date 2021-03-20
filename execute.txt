@@ -1,0 +1,12 @@
+:timer.tc(fn -> ReportsGenerator.build_from_many(["asdaa", "asdab", "asdac"]) end)
+:erlang.memory(:total)
+
+:timer.tc(fn -> ReportsGenerator.build_from_many(["outaa", "outab"]) end)
+:erlang.memory(:total)
+
+
+
+:timer.tc(fn -> ReportsGenerator.build_from_many(["report_1.csv", "report_2.csv", report_3.csv]) end)
+:erlang.memory(:total)
+
+

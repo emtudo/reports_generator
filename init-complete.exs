@@ -1,0 +1,1 @@
+ReportsGenerator.build("a.csv")
